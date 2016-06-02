@@ -1,0 +1,22 @@
+{
+  "name": "guidelines",
+  "version": "1.0.0",
+  "description": " ",
+  "main": " ",
+  "scripts": {
+    "test": " "
+  },
+  "repository": {
+    "type": "git",
+    "url": " "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.12.10",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-pug": "^3.0.3",
+    "gulp-sass": "^2.3.1"
+  }
+}

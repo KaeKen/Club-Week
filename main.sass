@@ -2,3 +2,209 @@ body
 	margin: 0
 	padding: 0
 	font-family: 'Open Sans'
+	font-size: 16
+	position: relative
+	overflow-x: hidden
+a
+	text-decoration: none
+.nav--local
+	height: 100%
+	position: fixed
+	z-index: 9
+	padding: 8px 2rem
+	box-sizing: border-box
+	.nav-content
+		height: 100%
+		padding: 4px 1rem
+		box-sizing: border-box
+		display: block
+		flex-direction: column
+		justify-content: center
+		overflow-y: auto
+		overflow-x: hidden
+		position: relative
+		> div
+			display: block
+		.card--announ
+			background: #48CFAD
+			border-radius: 5px
+			padding: 2px 0
+			margin-top: 10%
+			.day
+				text-align: center
+				font-size: .9rem
+				color: lighten(#48CFAD, 30%)
+				font-size: 400
+				margin: 4px 0
+			.events--title
+				margin: 8px 0
+				text-align: center
+				color: white
+				font-weight: 500
+		.card--timeline
+			width: 13rem
+			// border: 1px solid #E6E9ED
+			border-radius: 4px
+			height: auto
+			background: white
+			position: relative
+			&:first-child
+				margin-top: 50%
+			.head
+				display: flex
+				justify-content: space-between
+				align-items: center
+				padding: 4px 12px
+				// border-bottom: 1px solid #E6E9ED
+			.day 
+				font-size: .8rem
+				font-weight: 300
+				color: #48CFAD!important
+			.title
+				padding: 5px 0
+				text-align: center
+				font-weight: 400
+				color: darken(#CCD1D9, 10%)
+				position: relative
+				transition: 301ms
+				cursor: pointer
+				&:hover
+					color: #37BC9B
+				&:last-child::after
+					border: none
+			.events--title
+				padding: 8px 0
+.main-body
+	width: calc(100% - 17rem)
+	margin-left: 17rem
+	height: 100vh
+	position: relative
+	.rule-content
+		width: 700px
+		height: auto
+		margin: 2rem auto
+		> div
+			font-weight: 300
+			padding: 1rem
+			border-radius: 6px
+			margin-bottom: 1rem
+		.rule-item--notify
+			background: lighten(#FFCE54, 15%)
+			color: darken(#FFCE54, 27%)
+			border: 1px solid #FFCE54
+		.rule-item--warning
+			background: lighten(#ED5565, 15%)
+			color: darken(#ED5565, 27%)
+			border: 1px solid #ED5565
+		.notify--caption
+			margin-bottom: 0
+			padding: 8px
+			font-size: .8rem
+			font-weight: 500
+			color: #FFCE54
+	.section-head
+		margin: auto
+		position: relative
+		padding: 1rem 0
+		box-sizing: border-box
+		width: 700px
+		margin-bottom: 3rem
+		span 
+			padding: 4px 0
+			font-size: 2.25rem
+			font-weight: 500
+			color: #48CFAD
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				width: 20%
+				height: 3px
+				left: 0
+				bottom: 0
+				background: lighten(#48CFAD, 25%)
+	.section-content
+		margin: 1rem auto
+		position: relative
+	.section-item
+		width: 660px
+		position: relative
+		margin: 2rem auto
+		> *
+			font-family: Cambria,"Times New Roman",Times,serif
+		.content
+			color: rgba(0,0,0,.8)
+			font-size: 21px
+			word-break: break-word
+			word-wrap: break-word
+			font-weight: 300
+			font-style: normal
+			line-height: 1.58
+			letter-spacing: -.003em
+		ul li
+			font-size: 20px!important
+			color: rgba(0,0,0,.7)
+			line-height: 1.75
+		.itemNumber
+			float: left
+			position: absolute
+			top: -10px
+			left: -35px
+			font-size: 28px
+			font-weight: 200
+			color: lighten(#48CFAD, 15%)
+	.section-criteria
+		width: 700px
+		margin: 2rem auto
+		position: relative
+		.head
+			font-size: 2rem
+			font-weight: 100
+			color: #656D78
+			margin: 1rem 0
+			text-align: center
+		.criteria--list
+			margin-left: 2rem
+			position: relative
+		.list-title
+			text-align: center
+			margin: 1rem 0
+			font-weight: 300
+			color: #656D78
+			font-size: 1.35rem
+		.list-item
+			display: flex
+			align-items: center
+			position: relative
+			&::after
+				content: ''
+				position: absolute
+				width: 100%
+				height: 1px
+				border-top: 1px dashed #AAB2BD
+				bottom: 0
+		.list-item > div
+			display: inline-block
+		.list-item-head
+			width: 20rem
+			color: #656D78
+			padding: 12px 0
+			text-align: right
+			margin-right: 2rem
+		.list-item-percent
+			font-size: 2.5rem
+			font-weight: 100
+			margin: 0 8px
+			color: #48CFAD
+			position: relative
+			span
+				font-size: 1.75rem
+				position: absolute
+				top: 8px
+				color: lighten(#48CFAD, 10%)
+		.total-percent
+			text-align: center
+			margin: 1rem 0
+			font-size: 2.5rem
+			font-weight: 100
+			color: #48CFAD
